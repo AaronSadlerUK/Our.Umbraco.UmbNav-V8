@@ -9,6 +9,9 @@ namespace UmbNav.Core.Models
 {
     public class UmbNavItem
     {
+        [JsonProperty("url")]
+        public string Url { get; set; }
+
         [JsonProperty("udi")]
         public GuidUdi Udi { get; set; }
 
@@ -62,9 +65,6 @@ namespace UmbNav.Core.Models
 
         [JsonProperty("hideLoggedOut")]
         internal bool HideLoggedOut { get; set; }
-
-        [JsonProperty("url")]
-        internal string Url { get; set; }
 
         [JsonProperty("includeChildNodes")]
         internal bool IncludeChildNodes { get; set; }
